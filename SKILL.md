@@ -119,7 +119,7 @@ Other tells to delete on sight:
 "Experts believe." "Studies show." "Research suggests." "Industry leaders agree." If you can't name the expert, the study, or the leader, the attribution is doing nothing except borrowing authority you don't have.
 
 - Bad: "Studies show most validators underperform after year one."
-- Good: "Rated's 2025 operator report put first-year effectiveness at 94.2%, against 97.1% past year two."
+- Good: "NodeWatch's 2025 operator report put first-year effectiveness at 94.2%, against 97.1% past year two." (Invented example: name a real, checkable source.)
 - Also good: "Most validators get worse after year one." (No source beats a fake one.)
 
 ### Rule 11: Use "Is" and "Has"
@@ -167,7 +167,7 @@ Strings of present participles doing pseudo-analysis: "symbolizing the region's 
 The same move shows up without the "-ing": "this represents a broader shift", "the decision symbolizes a commitment to excellence", "it speaks to a larger trend in the industry". If the significance is real, show the consequence. Otherwise cut the sentence.
 
 - Bad: "The partnership reflects a growing focus on validator transparency."
-- Good: "Since the partnership, Attestant publishes per-client effectiveness monthly. Nobody else does."
+- Good: "Since the partnership, the operator publishes per-client effectiveness monthly. Nobody else in the sector does."
 
 ### Rule 17: Never Ship a Placeholder
 `[Your Name]`, `[INSERT SOURCE URL]`, `[Describe the specific section]`, `2025-XX-XX`, `<!-- add citation -->`. A visible placeholder is proof the draft was pasted without editing. It's the most expensive tell on this list: it costs the reader's trust in one glance.
