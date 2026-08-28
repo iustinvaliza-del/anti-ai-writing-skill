@@ -1,6 +1,6 @@
 ---
 name: anti-ai-writing
-description: 18 anti-AI writing rules for any prose a person other than the author will read (emails, posts, decks, reports, CVs). Applies an audience test first; internal notes and docs are exempt. Use when drafting, rewriting, or polishing human-facing text, or when asked to "de-AI" a draft.
+description: 22 anti-AI writing rules for any prose a person other than the author will read (emails, posts, decks, reports, CVs). Applies an audience test first; internal notes and docs are exempt. Use when drafting, rewriting, or polishing human-facing text, or when asked to "de-AI" a draft.
 ---
 
 # Anti-AI Writing
@@ -114,6 +114,10 @@ Other tells to delete on sight:
 | "moreover" | Delete. The next sentence doesn't need a runway. |
 | "furthermore" | Delete. Same tell as "moreover". |
 | Closing on "Ultimately" / "In conclusion" | End on the specific ask (Rule 7). |
+| Title Case Headings / "The Power of X: Why Y Works" colon-titles | Sentence case. Say what the section is about. |
+| Fractal summaries: "In this section we'll..." / "...as we've seen" | Delete every preview and recap. The reader just read it. |
+| Prompt echo: "This essay will explore..." | Delete. Start exploring. |
+| `utm_source=chatgpt.com` (or any AI tool) in pasted URLs | Strip the tracking params. This one outs the whole draft. |
 
 ### Rule 10: Name the Source or Cut the Attribution
 "Experts believe." "Studies show." "Research suggests." "Industry leaders agree." If you can't name the expert, the study, or the leader, the attribution is doing nothing except borrowing authority you don't have.
@@ -184,6 +188,40 @@ Fix the period to a colon and lowercase the start of the gloss, or drop the labe
 
 Carve-out: when the label is a full sentence on its own rather than a label introducing a gloss, the period is correct. For the unbolded form, only flag a leading fragment that is clearly a label (a 1-4 word noun phrase, no verb). A short complete sentence opening a bullet is fine.
 
+### Rule 19: No Bold-for-Emphasis in Prose
+Bolding words or phrases mid-sentence to add emphasis is an AI tell: **the key insight**, **critically**, **this changes everything**. A person writing an email or a paragraph almost never reaches for bold; the sentence itself carries the weight. If a word needs bold to feel important, rewrite the sentence so it doesn't.
+
+- Emails and messages: no bold anywhere, ever. Many mail pipelines are plain text, and bold markup arriving as literal asterisks is worse than the tell.
+- Docs, decks, and reports: bold stays structural only (headings, table headers, defined labels per Rule 18). Never decorative, never mid-prose emphasis.
+- This extends Rule 13 (no bold headers on bullets) from bullets to all running prose.
+
+### Rule 20: Vary the Rhythm (burstiness)
+AI writes uniform 15-20-word sentences in rectangular paragraphs, and detectors and readers both key on it. Force a spread: at least one sentence of 6 words or fewer, at least one of 25+, paragraphs of visibly different lengths, and at most one single-line paragraph per piece. "X is A. X is B. X is C." staccato runs get merged into one sentence or reframed.
+
+Read the draft's shape before its words. If every paragraph is the same height, the rhythm is the tell, whatever the vocabulary.
+
+### Rule 21: Commit (kill uniform positivity)
+AI text measures dramatically more certain and more positive than human text, and it auto-balances every claim with its counterpoint. Both are tells. Take a side and stay there; let one thing be annoying, unresolved, or mildly disappointing. A piece where everything is upbeat and every claim gets a "however" reads machine-made even with perfect vocabulary.
+
+This is the style-side complement of Rule 14's carve-out: genuine factual caveats stay; reflexive both-sidesing goes.
+
+### Rule 22: Concrete Beats Abstract
+If the first three sentences evoke nothing you can picture, inject a thing, place, number, or name. "A client" / "a tool" / "a city": name it. Numbers get texture: $43, 11 months, 4:30am, v2. Not "significant savings" or "recently". Invented example people are a tell of their own (AI defaults cluster on Emily/Sarah); use real names or none.
+
 ---
 
-> **Provenance.** This is a versioned export (v1.0, 2026-07-16) of a privately maintained canonical file. Rules 10-18 are adapted from [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon (MIT), reworded. Deliberately not imported from upstream: its Node scorer (this is a rules file, not a detector) and its ChatGPT-only fingerprints (`citeturn0search0`, `oai_citation`, `utm_source=chatgpt.com`), which never fire on Claude output.
+## The de-AI pass itself
+
+Fixes that fail (don't do these when humanizing a draft):
+
+- Thesaurus-swapping every flagged word. Weird synonyms read as AI-plus-effort.
+- Scattering random typos. Errors must read as casualness, never carelessness, and only where the register tolerates them.
+- Scrubbing personality along with the tells. A flat, tell-free text is still AI-shaped. The goal is voice, not absence.
+- Shrinking every long sentence. Humans write long sentences; they just don't write only 18-word ones.
+- Inventing facts, stats, or quotes to sound specific (Rule 10 still governs).
+
+Human markers worth adding (sparingly, where the voice supports them): a parenthetical aside with attitude; one "honestly" / "I think" / "to be fair"; a sentence starting with And, But, or Because; a mild complaint or unresolved edge; an irrelevant-but-true detail in an anecdote; a dropped Oxford comma in casual registers; uneven list items.
+
+---
+
+> **Provenance.** This is a versioned export (v1.1, 2026-08-28) of a privately maintained canonical file. Rules 10-18 are adapted from [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon (MIT), reworded. Deliberately not imported from upstream: its Node scorer (this is a rules file, not a detector) and its ChatGPT-only citation fingerprints (`citeturn0search0`, `oai_citation`), which never fire on Claude output. v1.1 adds Rules 19-22, the de-AI-pass section, and four Rule 9 rows (Title Case, fractal summaries, prompt echo, utm_source), distilled from Ruben Hassid's "How to bypass AI detectors" (X Article, 2026-07-23); its certainty/positivity figures are the article's, unverified.

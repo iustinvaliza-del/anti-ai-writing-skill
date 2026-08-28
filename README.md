@@ -1,6 +1,6 @@
 # anti-ai-writing
 
-A Claude skill: 18 rules that strip the AI tells out of human-facing prose, gated by an audience test so it never fires on your internal notes and docs.
+A Claude skill: 22 rules that strip the AI tells out of human-facing prose, gated by an audience test so it never fires on your internal notes and docs.
 
 The problem it solves: AI-drafted text has a recognizable fingerprint (em-dashes, "delve", "I hope this finds you well", antithesis constructions, hedge stacking). Readers spot it, and it costs you credibility. These rules make Claude catch and fix the tells before a draft reaches a person.
 
@@ -9,6 +9,7 @@ What makes it different from a generic "write better" prompt:
 - **Audience test first.** The rules apply only when a person other than the author will read the text. Internal notes, wikis, prompts, and commit messages are exempt, because a de-AI pass tuned for outreach prose actively degrades dense internal docs.
 - **Caveat protection.** Rule 14 kills stacked hedges ("could potentially") but explicitly protects factual uncertainty labels ("unconfirmed", "unaudited", "estimate"). De-AI'ing a research or financial doc must never strip what you know about how well you know it.
 - **Rules only, no scorer.** Half of these tells are judgment calls that regexes can't detect. There is no linter, no 0-100 score, nothing to game.
+- **The pass itself has rules.** v1.1 adds what NOT to do when humanizing (no thesaurus-swapping, no fake typos, don't scrub personality: a flat, tell-free text is still AI-shaped), plus rhythm variance, commitment over both-sidesing, and concreteness rules.
 
 ## Install
 
