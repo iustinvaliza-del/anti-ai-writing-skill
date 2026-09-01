@@ -9,7 +9,7 @@ What makes it different from a generic "write better" prompt:
 - **Audience test first.** The rules apply only when a person other than the author will read the text. Internal notes, wikis, prompts, and commit messages are exempt, because a de-AI pass tuned for outreach prose actively degrades dense internal docs.
 - **Caveat protection.** Rule 14 kills stacked hedges ("could potentially") but explicitly protects factual uncertainty labels ("unconfirmed", "unaudited", "estimate"). De-AI'ing a research or financial doc must never strip what you know about how well you know it.
 - **Rules only, no scorer.** Half of these tells are judgment calls that regexes can't detect. There is no linter, no 0-100 score, nothing to game.
-- **The pass itself has rules.** v1.1 adds what NOT to do when humanizing (no thesaurus-swapping, no fake typos, don't scrub personality: a flat, tell-free text is still AI-shaped), plus rhythm variance, commitment over both-sidesing, and concreteness rules.
+- **The pass itself has rules.** v1.1 adds what NOT to do when humanizing (no thesaurus-swapping, no fake typos, don't scrub personality: a flat, tell-free text is still AI-shaped), plus rhythm variance, commitment over both-sidesing, and concreteness rules. v1.2 adds the information-density meta-test and the structural-rewrite mandate: detectors match sentence-shape combinations, so formulations like the rule-of-three survive word swaps and even commercial humanisers (per the FT's 2026 test).
 
 ## Install
 

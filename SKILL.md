@@ -94,7 +94,7 @@ Use instead:
 Spaced hyphens ( - ) are starting to read as AI too. Default to a period. If a "—" shows up in a draft, delete it and re-punctuate.
 
 ### Rule 9: Kill the Antithesis Tic (and its cousins)
-"It's not just X, it's Y." "Not only X, but Y." "This isn't about X, it's about Y." These negation-then-pivot lines are pure AI cadence. Say the point once, positively.
+"It's not just X, it's Y." "Not only X, but Y." "This isn't about X, it's about Y." "Can X but can't Y." These negation-then-pivot and contrast-seesaw lines are pure AI cadence. Detectors key on the formulations themselves, and they survive word swaps intact. Say the point once, positively.
 
 - Bad: "This isn't a monitoring tool, it's a trust layer."
 - Good: "It measures the network so institutions don't have to take one operator's word for it."
@@ -106,7 +106,7 @@ Other tells to delete on sight:
 | Rule-of-three triads ("fast, reliable, and scalable") | Keep the one that matters. |
 | "In today's..." / "In the world of..." openers | Cut it. Start with the point (Rule 2). |
 | "It's worth noting that" / "It's important to note" | Just note it. |
-| "delve", "leverage", "robust", "seamless", "landscape", "realm" | Plain words: dig into, use, solid, smooth, market, area. |
+| "delve", "leverage", "robust", "seamless", "landscape", "realm", "deeper" | Plain words: dig into, use, solid, smooth, market, area, more. |
 | "game-changer", "unlock", "elevate", "supercharge" | Overclaim. Say what it actually does. |
 | "crown jewels" | Name the actual asset. The metaphor hides what you mean. |
 | "pivotal" | Plain word: key. Or cut it. Most things aren't. |
@@ -212,6 +212,8 @@ If the first three sentences evoke nothing you can picture, inject a thing, plac
 
 ## The de-AI pass itself
 
+The meta-test is information density: in human writing every word has intention behind it; AI text reads empty even when polished (it's what Pangram's Max Spero checks before running any detector). If a sentence would survive deletion with nothing lost, delete it.
+
 Fixes that fail (don't do these when humanizing a draft):
 
 - Thesaurus-swapping every flagged word. Weird synonyms read as AI-plus-effort.
@@ -219,9 +221,10 @@ Fixes that fail (don't do these when humanizing a draft):
 - Scrubbing personality along with the tells. A flat, tell-free text is still AI-shaped. The goal is voice, not absence.
 - Shrinking every long sentence. Humans write long sentences; they just don't write only 18-word ones.
 - Inventing facts, stats, or quotes to sound specific (Rule 10 still governs).
+- Word-level scrambling that leaves sentence shapes alone. The FT tested a humaniser: the output was less polished but the rule-of-three and "can X but can't Y" formulations survived untouched, plus a new rambling run-on. Detectors match word placement, frequency, and sentence/paragraph patterns in combination, so changing a few words beats nothing. Rewrite the structure (break the triad, kill the seesaw, vary the rhythm) or don't bother.
 
 Human markers worth adding (sparingly, where the voice supports them): a parenthetical aside with attitude; one "honestly" / "I think" / "to be fair"; a sentence starting with And, But, or Because; a mild complaint or unresolved edge; an irrelevant-but-true detail in an anecdote; a dropped Oxford comma in casual registers; uneven list items.
 
 ---
 
-> **Provenance.** This is a versioned export (v1.1, 2026-08-28) of a privately maintained canonical file. Rules 10-18 are adapted from [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon (MIT), reworded. Deliberately not imported from upstream: its Node scorer (this is a rules file, not a detector) and its ChatGPT-only citation fingerprints (`citeturn0search0`, `oai_citation`), which never fire on Claude output. v1.1 adds Rules 19-22, the de-AI-pass section, and four Rule 9 rows (Title Case, fractal summaries, prompt echo, utm_source), distilled from Ruben Hassid's "How to bypass AI detectors" (X Article, 2026-07-23); its certainty/positivity figures are the article's, unverified.
+> **Provenance.** This is a versioned export (v1.2, 2026-09-01) of a privately maintained canonical file. Rules 10-18 are adapted from [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) by Conor Bronsdon (MIT), reworded. Deliberately not imported from upstream: its Node scorer (this is a rules file, not a detector) and its ChatGPT-only citation fingerprints (`citeturn0search0`, `oai_citation`), which never fire on Claude output. v1.1 added Rules 19-22, the de-AI-pass section, and four Rule 9 rows (Title Case, fractal summaries, prompt echo, utm_source), distilled from Ruben Hassid's "How to bypass AI detectors" (X Article, 2026-07-23); its certainty/positivity figures are the article's, unverified. v1.2 adds "can X but can't Y" and "deeper" to Rule 9, the information-density meta-test, and the humaniser/structure lesson in the de-AI pass, distilled from "Did AI write this? It's getting harder to tell" (Elaine Moore, Financial Times, 2026-08-29).
